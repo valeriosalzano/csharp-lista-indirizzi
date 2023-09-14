@@ -30,10 +30,13 @@ namespace csharp_lista_indirizzi
                     }
                 }
 
+                file.Close();
+
             }catch (Exception ex) 
             {
                 Console.WriteLine(ex.Message);
             }
+
             return data;
         }
     }
